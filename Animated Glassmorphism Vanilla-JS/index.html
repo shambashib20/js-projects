@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Glassmorphism | UI design | Vanilla JS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <section class="ourteam" id="ourteam">
+            <h2>
+                <span>Glassmorphism UI design With Vanilla js</span>
+            </h2>
+
+            <div class="ourteamcontainer">
+                <div class="card">
+                    <div class="content">
+                        <div class="imgbox">
+                            <img src="myimg5.jpg" alt="">
+                        </div>
+
+                        <h1>Shambashib</h1>
+                        <h3>Acoustic Guitarist</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Shambashib" target="_blank"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></a></li>
+                                <br>
+                                <li><a href="https://www.instagram.com/_sahil_128/" target="_blank"><i class="fab fa-instagram" style="font-size: 15px;"></i></a></li>
+                                <br>
+                                <li><a href="https://www.linkedin.com/in/shambashib" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 15px;"></i></a></li>
+                                <br>
+                                <li><a href="#"><i class="fab fa-snapchat-ghost" style="font-size: 15px;"></i></a></li>
+                                <br>
+                            </ul>
+                        </div>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="text/javascript">
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelector(".card"), {
+                max: 25,
+                speed: 400,
+                glare: false,
+                "max-glare": 1,
+            });
+            
+        </script> 
+    </body>
+</html>
